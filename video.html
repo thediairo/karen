@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Edit - Natanael Cano</title>
+    <style>
+        /* Estilo general */
+        body {
+            background: linear-gradient(135deg, #0d0f1d, #1a1d2e); /* Azul y negro oscuro */
+            font-family: 'Arial', sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Menú de navegación */
+        .menu {
+            background: rgba(0, 0, 0, 0.8); /* Negro con transparencia */
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+            z-index: 100;
+        }
+
+        .menu a {
+            color: #FF0000; /* Rojo brillante */
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0 20px;
+            transition: color 0.3s ease;
+        }
+
+        .menu a:hover {
+            color: #FFD700; /* Amarillo dorado */
+        }
+
+        /* Contenedor principal */
+        .container {
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro translúcido */
+            padding: 40px 30px;
+            border-radius: 25px;
+            width: 80%;
+            max-width: 800px;
+            margin: 120px auto 20px auto; /* Ajuste por el menú */
+            box-shadow: 0px 15px 30px rgba(255, 0, 0, 0.6);
+            animation: fadeIn 1s ease-out;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #FF0000; /* Rojo brillante */
+            text-shadow: 4px 4px 15px rgba(255, 0, 0, 0.8);
+            margin-bottom: 20px;
+            font-family: 'Georgia', serif;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo del video */
+        video {
+            border-radius: 15px;
+            width: 100%;
+            max-width: 720px;
+            box-shadow: 0px 10px 20px rgba(255, 0, 0, 0.7);
+            transition: transform 0.3s ease;
+        }
+
+        video:hover {
+            transform: scale(1.05);
+        }
+
+        /* Botón de regreso */
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 35px;
+            font-size: 20px;
+            text-decoration: none;
+            background-color: #FF0000; /* Rojo brillante */
+            color: white;
+            border-radius: 15px;
+            transition: background 0.3s ease, transform 0.3s;
+            font-weight: bold;
+        }
+
+        .back-button:hover {
+            background-color: #D40000; /* Rojo más oscuro */
+            transform: scale(1.1);
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú de Navegación -->
+    <div class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="biografia.html">Biografía</a>
+        <a href="playlist.html">Playlist</a>
+        <a href="premios.html">Premios</a>
+        <a href="album.html">Álbum</a>
+    </div>
+
+    <div class="container">
+        <h1>Video Edit de Natanael Cano</h1>
+        <p>Este es un video homenaje con imágenes y mezcla de canciones.</p>
+        
+        <video controls poster="poster.jpg">
+            <source src="NatanaelEdit.mp4" type="video/mp4">
+        </video>
+        <a href="index.html" class="back-button">Volver al inicio</a>
+    </div>
+
+</body>
+</html>

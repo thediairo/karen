@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbumes de Natanael Cano</title>
+    <style>
+        /* Estilo general */
+        body {
+            background-color: #000;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            padding-top: 80px;
+        }
+
+        /* Menú fijo */
+        nav {
+            background: linear-gradient(90deg, #800000, #000, #800000);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 0;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ff0000;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff3333;
+        }
+
+        /* Contenedor */
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #ff0000;
+            text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.8);
+            margin-bottom: 30px;
+        }
+
+        /* Diseño de los álbumes */
+        .album-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .album {
+            background-color: rgba(255, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.7);
+        }
+
+        .album p {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .album iframe {
+            border-radius: 12px;
+            width: 100%;
+            height: 380px;
+        }
+
+        /* Estilo del botón de regreso */
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            font-size: 18px;
+            text-decoration: none;
+            background-color: #ff0000;
+            color: white;
+            border-radius: 8px;
+            transition: background 0.3s ease, transform 0.3s;
+            font-weight: bold;
+        }
+
+        .back-button:hover {
+            background-color: #b30000;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="biografia.html">Biografía</a>
+        <a href="playlist.html">Playlist</a>
+        <a href="premios.html">Premios</a>
+        <a href="album.html" class="active">Álbumes</a>
+        <a href="canciones_medios.html">Canciones en medios</a>
+        <a href="video.html">Video Edit</a>
+    </nav>
+
+    <div class="container">
+        <h1>Álbumes y Playlists de Natanael Cano</h1>
+        <div class="album-list">
+            <!-- Álbum: Corridos Tumbados -->
+            <div class="album">
+                <p>🎶 <strong>Corridos Tumbados</strong></p>
+                <div>
+                    <iframe src="https://open.spotify.com/embed/album/0Pr7tJefVMQCh8hy1n8OLr?si=6OMKlEiGSXuINjjd4zPKCA" width="100%" height="380" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+            </div>
+
+            <!-- Playlist: NataKong -->
+            <div class="album">
+                <p>🎶 <strong>NataKong</strong></p>
+                <div>
+                    <iframe src="https://open.spotify.com/embed/playlist/7MymXzkGvtGUBj3XX073B8?si=VfWrTrOTQdW9jeuJF2wW0w&pi=74uXCV9HT7apy" width="100%" height="380" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+            </div>
+
+            <!-- Playlist: Nata Montana -->
+            <div class="album">
+                <p>🎶 <strong>Nata Montana</strong></p>
+                <div>
+                    <iframe src="https://open.spotify.com/embed/playlist/6YWKHfwppNRLivqLh33zKL?si=p3h5klb7Q-CnvgaqBF9dbQ&pi=qTfi6V1eSEih0" width="100%" height="380" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+            </div>
+
+            <a href="index.html" class="back-button">Volver al inicio</a>
+        </div>
+    </div>
+
+</body>
+</html>

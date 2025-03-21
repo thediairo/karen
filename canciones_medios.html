@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canciones en Películas, Series y Comerciales</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+            background-size: cover;
+            background-position: center;
+            padding: 50px 0;
+        }
+        h1 {
+            color: #FFD700;
+            font-size: 42px;
+            text-shadow: 3px 3px 8px black;
+            margin-bottom: 40px;
+        }
+        .contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .tarjeta {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0px 0px 15px gold;
+            transition: 0.3s;
+        }
+        .tarjeta:hover {
+            background: rgba(255, 215, 0, 0.1);
+            box-shadow: 0px 0px 20px orange;
+        }
+        .tarjeta h2 {
+            color: #FFD700;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .tarjeta p {
+            color: white;
+            font-size: 18px;
+        }
+        .tarjeta a {
+            text-decoration: none;
+            background: #FFD700;
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: black;
+            font-size: 18px;
+            display: inline-block;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+        .tarjeta a:hover {
+            background: #FFA500;
+        }
+    </style>
+</head>
+<body>
+    <h1>Canciones en Películas, Series y Comerciales</h1>
+    
+    <div class="contenedor">
+        <div class="tarjeta">
+            <h2>AMG</h2>
+            <p>Usada en la serie "El Señor de los Cielos".</p>
+            <a href="https://www.youtube.com/watch?v=ENL1pGDtF_A" target="_blank">Ver escena</a>
+        </div>
+
+        <div class="tarjeta">
+            <h2>Porte Exuberante</h2>
+            <p>Aparece en un comercial de ropa urbana.</p>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Ver comercial</a>
+        </div>
+
+        <div class="tarjeta">
+            <h2>Pacas de Billetes</h2>
+            <p>Incluida en la película "Los Reyes del Corrido".</p>
+            <a href="https://www.youtube.com/watch?v=5qap5aO4i9A" target="_blank">Ver escena</a>
+        </div>
+    </div>
+
+    <a href="index.html" style="display: block; margin-top: 30px; background: #FFD700; padding: 12px 20px; border-radius: 5px; color: black; font-size: 22px; text-decoration: none; box-shadow: 0px 0px 10px gold; transition: 0.3s;">Volver al Menú</a>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist - Canciones Favoritas</title>
+    <style>
+        /* Estilo global de la página */
+        body {
+            background-color: #121212; /* Fondo oscuro */
+            background-image: url('fondo_playlist_natanael.jpg'); /* Agrega una imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            padding-top: 80px; /* Para evitar que el menú tape el contenido */
+        }
+
+        /* Estilo para el menú fijo */
+        nav {
+            background-color: rgba(30, 30, 30, 0.9);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 0;
+            z-index: 1000;
+            text-align: center;
+            box-shadow: 0px 4px 12px rgba(255, 215, 0, 0.5);
+        }
+
+        /* Enlaces del menú */
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        /* Efecto de brillo dorado al pasar el mouse */
+        nav a:hover {
+            color: gold;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: gold;
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Estilo para el contenedor principal */
+        .container {
+            background-color: rgba(30, 30, 30, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            width: 80%;
+            margin: 80px auto;
+            box-shadow: 0px 4px 20px rgba(255, 215, 0, 0.7);
+            text-align: center;
+        }
+
+        /* Títulos */
+        h1 {
+            font-size: 36px;
+            color: gold;
+            text-shadow: 2px 2px 8px rgba(255, 215, 0, 0.7);
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para la lista de canciones */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            font-size: 20px;
+            background: rgba(255, 215, 0, 0.2);
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid gold;
+        }
+
+        li:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 18px rgba(255, 215, 0, 0.7);
+        }
+
+        /* Estilo de los enlaces dentro de la lista */
+        a {
+            color: gold;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        /* Estilo para el iframe de Spotify */
+        .spotify {
+            margin-top: 40px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        iframe {
+            border-radius: 12px;
+        }
+
+        /* Estilo para el botón de regreso */
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            font-size: 18px;
+            text-decoration: none;
+            background-color: gold;
+            color: black;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background 0.3s ease, transform 0.2s;
+        }
+
+        .back-button:hover {
+            background-color: white;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú fijo en la parte superior -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="biografia.html">Biografía</a>
+        <a href="playlist.html" class="active">Playlist</a>
+        <a href="premios.html">Premios</a>
+        <a href="album.html">Álbumes</a>
+        <a href="canciones_medios.html">Canciones en medios</a>
+        <a href="video.html">Video Edit</a>
+    </nav>
+
+    <div class="container">
+        <h1>Mis Canciones Favoritas de Natanael Cano</h1>
+        <ul>
+            <li><a href="https://open.spotify.com/track/2Q8DRuwdZxWvjrXHItlu1f?si=_G1_f0_VQOujSj_XRc978w" target="_blank">Bien Loco</a> - Una rola con todo el estilo tumbado.</li>
+            <li><a href="https://open.spotify.com/track/5RQKSb1oqK7bAkuNpu1NSC?si=Y67phv9hSL2hKW4alFy_PQ&context=spotify%3Aplaylist%3A37i9dQZF1DWWhMyyrqZlaY" target="_blank">Moritas</a> - Flow inigualable y ritmo pegajoso.</li>
+            <li><a href="https://open.spotify.com/track/1LftbNqQmQvAHAqnASk6ez?si=5_2HtMhaStqlnSfKhuDM-w" target="_blank">Dando y Dando</a> - El mejor corrido tumbado con fuerza.</li>
+        </ul>
+
+        <div class="spotify">
+            <h2>Escucha la Playlist en Spotify</h2>
+            <iframe style="border-radius:12px" 
+                src="https://open.spotify.com/embed/playlist/7ogMCFdxlSqYs4sKPzRiM6?utm_source=generator" 
+                width="100%" height="380" frameBorder="0" allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+            </iframe>
+        </div>
+
+        <a href="index.html" class="back-button">Volver al inicio</a>
+    </div>
+</body>
+</html>

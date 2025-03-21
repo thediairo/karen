@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premios de Carla Morrison</title>
+    <style>
+        /* Estilos generales */
+        body {
+            background-image: url('fondo_premios.jpg'); /* Imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            padding-top: 80px; /* Para evitar que el menú tape el contenido */
+        }
+
+        /* Menú fijo */
+        nav {
+            background-color: rgba(0, 0, 0, 0.85); /* Fondo oscuro con transparencia */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.7); /* Sombra más intensa */
+        }
+
+        nav a {
+            color: #1E90FF; /* Azul para los enlaces */
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: bold;
+            font-size: 18px;
+            text-transform: uppercase;
+            position: relative;
+            transition: all 0.3s ease;
+            padding: 8px 0;
+        }
+
+        nav a:hover {
+            color: #ADD8E6; /* Color azul claro al pasar el ratón */
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #1E90FF; /* Azul para la línea debajo */
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Estilos del contenedor */
+        .container {
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con transparencia */
+            padding: 40px;
+            border-radius: 15px;
+            width: 80%;
+            margin: 100px auto;
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.8); /* Sombra más prominente */
+        }
+
+        /* Títulos */
+        h1 {
+            font-size: 36px;
+            color: #1E90FF; /* Azul para los títulos */
+            text-shadow: 3px 3px 8px rgba(30, 144, 255, 0.8); /* Sombra azul más suave */
+            margin-bottom: 30px;
+        }
+
+        /* Lista de premios */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            font-size: 22px;
+            background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
+            padding: 15px;
+            margin: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-weight: bold;
+            position: relative;
+            color: #1E90FF; /* Color azul para los elementos de la lista */
+        }
+
+        li:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 25px rgba(30, 144, 255, 0.8); /* Sombra azul al pasar el ratón */
+            background-color: rgba(30, 144, 255, 0.15); /* Fondo azul más brillante */
+        }
+
+        li::before {
+            content: '🏆';
+            position: absolute;
+            left: -40px;
+            font-size: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* Botón de regreso */
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            font-size: 18px;
+            text-decoration: none;
+            background-color: #1E90FF; /* Azul para el botón */
+            color: black;
+            border-radius: 8px;
+            transition: background 0.3s ease, transform 0.3s;
+            font-weight: bold;
+        }
+
+        .back-button:hover {
+            background-color: #4682B4; /* Azul más oscuro al pasar el ratón */
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="biografia.html">Biografía</a>
+        <a href="playlist.html">Playlist</a>
+        <a href="premios.html" class="active">Premios</a>
+        <a href="album.html">Álbumes</a>
+        <a href="canciones_medios.html">Canciones en medios</a>
+        <a href="video.html">Video Edit</a>
+    </nav>
+
+    <div class="container">
+        <h1>Premios y Reconocimientos</h1>
+        <ul>
+            <li><strong>Grammy Latino (2012)</strong> - Mejor Álbum de Música Alternativa por *Déjenme Llorar*.</li>
+            <li><strong>Premios IMAS (2011)</strong> - Mejor Artista Femenina del Año.</li>
+            <li><strong>MTV Millennial Awards</strong> - Mejor Artista Indie.</li>
+            <li><strong>Grammy Latino (2016)</strong> - Nominación a Mejor Álbum de Música Alternativa por *Amor Supremo*.</li>
+            <li><strong>Grammy Latino (2022)</strong> - Nominación a Mejor Álbum de Pop Vocal por *El Renacimiento*.</li>
+        </ul>
+
+        <a href="index.html" class="back-button">Volver al inicio</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía de Natanael Cano</title>
+    <style>
+        body {
+            background-color: #000; /* Fondo negro */
+            font-family: 'Georgia', serif;
+            color: #fff; /* Texto blanco */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            padding-top: 70px; /* Para dar espacio al menú fijo */
+        }
+        h1 {
+            font-size: 36px;
+            color: #e60000; /* Rojo */
+            margin-top: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.7); /* Sombra azul */
+        }
+        p {
+            font-size: 20px;
+            width: 80%;
+            margin: 20px auto;
+            line-height: 1.6;
+            background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .container {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            width: 85%;
+            margin: 30px auto;
+        }
+        .imagen {
+            width: 50%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            background-color: #e60000; /* Rojo */
+            color: white;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        a:hover {
+            background-color: #a61b2b; /* Rojo más oscuro */
+        }
+        /* Estilo para el menú */
+        nav {
+            background-color: #e60000; /* Rojo */
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        nav a {
+            margin: 0 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #0000ff; /* Azul */
+        }
+        /* Efectos para el menú */
+        .nav-container {
+            display: flex;
+            justify-content: center;
+        }
+        nav a.active {
+            color: #0000ff; /* Azul */
+            border-bottom: 2px solid #0000ff; /* Subrayado azul */
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html">Inicio</a>
+            <a href="biografia.html" class="active">Biografía</a>
+            <a href="playlist.html">Playlist</a>
+            <a href="premios.html">Premios</a>
+            <a href="album.html">Álbumes</a>
+            <a href="canciones_medios.html">Canciones en medios</a>
+            <a href="video.html">Video Edit</a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h1>Biografía de Natanael Cano</h1>
+        <img src="natanael_cano.jpg" alt="Natanael Cano" class="imagen">
+        <p>
+            Natanael Cano es un cantante y compositor mexicano, conocido por ser uno de los precursores del género musical "corridos tumbados". Nació el 27 de marzo de 2001 en Hermosillo, Sonora. Con un estilo único que mezcla el regional mexicano con el trap y el rap, Natanael ha conquistado a una audiencia masiva, convirtiéndose en un ícono de la música urbana latina.
+        </p>
+        <p>
+            Desde sus primeros éxitos, como "Soy El Diablo", Natanael ha logrado capturar la atención de miles de fanáticos y ha sido reconocido con diversos premios en la industria de la música. Su habilidad para fusionar géneros y su inconfundible estilo lo han colocado como uno de los artistas más influyentes de su generación.
+        </p>
+        <a href="index.html">Volver al inicio</a>
+    </div>
+</body>
+</html>
